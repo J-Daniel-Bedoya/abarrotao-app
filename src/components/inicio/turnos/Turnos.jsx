@@ -15,7 +15,7 @@ const Turnos = () => {
     })
   }, [])
 
-  const modalPedido = (id) => {
+  const modalPedido = async(id) => {
     const randomTienda = Math.floor(Math.random() * tienda.length);
     const random = Math.floor(Math.random() * 20);
 
@@ -31,10 +31,6 @@ const Turnos = () => {
           title: '¡Haz tu pedido aquí!',
           text: `Tu turno es el: ${random}`,
           input: 'text',
-          input: "number",
-          inputAttributes: {
-            autocapitalize: 'off'
-          },
           showCancelButton: true,
           confirmButtonText: 'Listo!',
           showLoaderOnConfirm: true,
@@ -44,9 +40,6 @@ const Turnos = () => {
               title: 'Id tienda',
               text: `3, 4, 5`,
               input: 'number',
-              inputAttributes: {
-                autocapitalize: 'off'
-              },
               confirmButtonText: 'Listo!',
             }).then(resp => {
               axios.post(`${apiTienda}/usuario/${1}/mensajes`, {mensaje: result.value, tiendaId: resp.value})
