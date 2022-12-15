@@ -75,8 +75,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem;
+  padding: .6rem 1rem;
   border-radius: 6px;
+}
+.pedidos__todosLosMensajes::-webkit-scrollbar{
+  width: 3px;
+  background-color: #10022d;
+}
+.pedidos__todosLosMensajes::-webkit-scrollbar-thumb{
+  width: 100%;
+  background-color: #038468;
 }
 .pedidos__recientes div{
   display: flex;

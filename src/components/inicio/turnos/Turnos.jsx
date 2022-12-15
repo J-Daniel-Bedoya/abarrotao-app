@@ -71,7 +71,7 @@ const Turnos = () => {
         }
       </div>
       <div>
-        <button onClick={() => setIsModal(!isModal)}>Ver pedidos</button>
+        <button className='turnos__boton--ver' onClick={() => setIsModal(!isModal)}>Ver pedidos</button>
       </div>
       {
         isModal && <Pedidos setIsModal={setIsModal} isModal={isModal}/>

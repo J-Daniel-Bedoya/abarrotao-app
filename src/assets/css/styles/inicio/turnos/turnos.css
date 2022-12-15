@@ -58,3 +58,15 @@
   cursor: pointer;
   background-color: #0c73cd;
 }
+.turnos__boton--ver{
+  padding: 6px 1rem;
+  border-radius: 4px;
+  border: none;
+  background-color: #0a959c;
+  color: #fff;
+  transition: .8s;
+}
+.turnos__boton--ver:hover{
+  cursor: pointer;
+  background-color: #0c73cd;
+}
