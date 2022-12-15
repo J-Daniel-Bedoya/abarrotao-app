@@ -3,12 +3,12 @@ import { auth } from "./firebase/firebaseConfig";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { HashRouter, Route, Routes } from "react-router-dom"
-import CodeVerificaction from "./components/CodeVerification";
+import CodeVerificaction from "./components/login/CodeVerification";
 import NavigationMenu from "./components/footer/Footer";
-import Login from "./components/Login";
-import LoginWithPhone from "./components/LoginWithPhone";
+import Login from "./components/login/Login";
+import LoginWithPhone from "./components/login/LoginWithPhone";
 import Navigationbar from "./components/nav/Navigationbar";
-import Register from "./components/Register";
+import Register from "./components/login/Register";
 import DashBoardRouter from "./router/DashBoardRouter";
 import PrivateRouter from "./router/PrivateRouter";
 import PublicRouter from "./router/PublicRouter";

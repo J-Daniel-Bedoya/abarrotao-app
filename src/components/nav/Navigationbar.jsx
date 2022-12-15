@@ -16,7 +16,7 @@ const Navigationbar = ({ isAuthentication }) => {
         <div className="navigation_logo">
           <img src={logoHeader} alt='Abarrotado Logo' className="imgLogoNav"/>
           <div className="appName">
-            <h2 >Abarrotado</h2>
+            <h2 >Abarrotao</h2>
           </div>
         </div>
         <div className="navigation__login">

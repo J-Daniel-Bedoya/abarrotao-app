@@ -3,10 +3,9 @@ import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useDispatch } from "react-redux";
-import { schemaLogin } from "../services/data";
-import { actionLoginAsync, loginProviderAsync } from "../redux/actions/userActions";
-import googleLogo from "../assets/imgs/gogle_logo.png";
-import phoneIcon from "../assets/imgs/phone-icon.png";
+import { schemaLogin } from "../../services/data";
+import { actionLoginAsync, loginProviderAsync } from "../../redux/actions/userActions";
+import googleLogo from "../../assets/imgs/gogle_logo.png";
 
 const Login = () => {
   const dispatch=useDispatch()

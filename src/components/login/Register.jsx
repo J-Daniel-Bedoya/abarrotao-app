@@ -1,10 +1,10 @@
 import React from "react";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
-import { schemaRegister } from "../services/data";
-import { fileUpLoad } from "../services/fileUpload";
+import { schemaRegister } from "../../services/data";
+import { fileUpLoad } from "../../services/fileUpload";
 import { useDispatch } from "react-redux";
-import { actionRegisterAsync } from "../redux/actions/userActions";
+import { actionRegisterAsync } from "../../redux/actions/userActions";
 const Register = () => {
   const dispatch = useDispatch();
   const {
